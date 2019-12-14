@@ -1,0 +1,19 @@
+var addTo = function(passed) // outer function
+{
+    var add = function(inner) //inner funtion
+    {
+        return passed + inner; //returns passed + inner
+    };
+        return add; // this returns the funtion itself
+};
+
+var addThree = new addTo(3); // this sends 3 to the passed funtion
+var addFour = new addTo(4); // thus send 4 to the passed function
+
+//console.dir(addThree);
+//console.dir(addFour);
+
+console.log(addThree(2));//this passes 1 to inner funtion
+console.log(addFour(2));//this passes 1 to  inner funtion
+
+//output is 5 and 6
