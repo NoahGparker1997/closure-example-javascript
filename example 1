@@ -1,0 +1,16 @@
+function Person(pName)
+{
+    var _name = pName; // this is a private variable
+    this.GetName = function() // this is used to call the private varible from somewhere else
+    {
+    return _name; 
+    };
+ }
+ 
+ example
+ var me = new Person("Rodrigio")
+ 
+ me
+ person{getName: function}
+ me.getName()
+ "Rodrigo"
