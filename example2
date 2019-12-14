@@ -1,0 +1,10 @@
+var passed = 3; //this can be called since its outside the function
+
+var addTo = function(passed)
+{
+    var inner = 2; //this can only be called inside the function since it was declared in the function
+    return passed +inner;
+    
+};
+
+console.log(addTo(3));
